@@ -19,7 +19,7 @@ public partial class HakkımızdaAdmin : System.Web.UI.Page
         }
 
     }
-
+    
     protected void Button1_Click(object sender, EventArgs e)
     {
         Panel2.Visible = true;
@@ -29,7 +29,7 @@ public partial class HakkımızdaAdmin : System.Web.UI.Page
     {
         Panel2.Visible = false;
     }
-
+    //Butona update işlemi
     protected void Button3_Click(object sender, EventArgs e)
     {
         SqlCommand cmd = new SqlCommand("Update Tbl_Hakkımızda set Metin=@p1", bgl.Connection());
